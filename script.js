@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function startGame() {
-        fetch('https://maryankostrubyak.github.io/Lab6/initial_boards.json')
+        fetch('http://localhost:3000/initial_boards')
             .then(response => response.json())
             .then(data => {
                 const randomIndex = Math.floor(Math.random() * data.length);
